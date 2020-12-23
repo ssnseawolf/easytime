@@ -20,7 +20,7 @@ TIME_ZONE=${TIME_ZONE:-"America/New York"}
 
 # Make sure server is updated and needed packages are installed
 dnf -y upgrade
-dnf install -y ntsec
+dnf install -y chrony
 dnf install -y dnf-automatic
 
 # Configure our timeserver (chrony)
