@@ -28,7 +28,7 @@ CHRONY_CONF=https://raw.githubusercontent.com/ssnseawolf/easytime/master/chrony.
 curl $CHRONY_CONF | tee /etc/chrony.conf > /dev/null
 
 # Set the server's time zone
-timedatectl set-timezone $Time_Zone
+timedatectl set-timezone $TIME_ZONE
 
 # Punch a hole through the firewall for NTPsec
 # firewall-cmd --add-service=dns --permanent
